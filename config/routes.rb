@@ -1,9 +1,8 @@
 Albums::Application.routes.draw do
+  get "albums/index", as: :albums
+
   get "session/new", as: :new_session
   post "session/create"
-
-  get "album/index", as: :albums
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
